@@ -34,6 +34,7 @@ async function updateChart() {
     let usernames = data.usernames;
     let posts = data.posts;
     data = { names: usernames, values: posts, duration: data.duration }
+    window.chart.data.datasets[0].label = data.duration;
 
     let colors = [];
     for (let i = 0; i != usernames.length; i++) {
