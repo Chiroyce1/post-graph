@@ -34,7 +34,7 @@ async function updateChart() {
     let usernames = data.usernames;
     let posts = data.posts;
     data = { names: usernames, values: posts, duration: data.duration }
-    window.chart.data.datasets[0].label = data.duration;
+    window.chart.data.datasets[0].label = `People with most number of posts in the last ${data.duration} hour(s)`
 
     let colors = [];
     for (let i = 0; i != usernames.length; i++) {
