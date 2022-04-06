@@ -35,7 +35,7 @@ async function updateChart() {
     let posts = data.posts;
     data = { names: usernames, values: posts, duration: data.duration }
     // window.chart.data.datasets[0].label = `People with most number of posts in the last ${data.duration} hour(s)`
-    window.chart.data.datasets[0].label = `People with most number of posts in the last 2 days`
+    window.chart.data.datasets[0].label = `Most posts on April Fools' day`
 
     let colors = [];
     for (let i = 0; i != usernames.length; i++) {
